@@ -1,1 +1,67 @@
 @import "tailwindcss";
+
+:root {
+  --seasalt: #f7f7f7;
+  --hunter-green: #3c5d4b;
+  --sky-blue: #6cc9dd;
+  --eerie-black: #1e1e1e;
+  --ash-gray: #aabbb2;
+  --dun: #c4beac;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced smooth scrolling for all elements */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--seasalt);
+  color: var(--eerie-black);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Custom Tailwind classes for our color scheme */
+.bg-seasalt { background-color: var(--seasalt); }
+.bg-hunter-green { background-color: var(--hunter-green); }
+.bg-sky-blue { background-color: var(--sky-blue); }
+.bg-eerie-black { background-color: var(--eerie-black); }
+.bg-ash-gray { background-color: var(--ash-gray); }
+.bg-dun { background-color: var(--dun); }
+
+.text-seasalt { color: var(--seasalt); }
+.text-hunter-green { color: var(--hunter-green); }
+.text-sky-blue { color: var(--sky-blue); }
+.text-eerie-black { color: var(--eerie-black); }
+.text-ash-gray { color: var(--ash-gray); }
+.text-dun { color: var(--dun); }
+
+.border-seasalt { border-color: var(--seasalt); }
+.border-hunter-green { border-color: var(--hunter-green); }
+.border-sky-blue { border-color: var(--sky-blue); }
+.border-eerie-black { border-color: var(--eerie-black); }
+.border-ash-gray { border-color: var(--ash-gray); }
+.border-dun { border-color: var(--dun); }
+
+/* Hover states */
+.hover\:bg-hunter-green:hover { background-color: var(--hunter-green); }
+.hover\:bg-sky-blue:hover { background-color: var(--sky-blue); }
+.hover\:text-seasalt:hover { color: var(--seasalt); }
+.hover\:text-sky-blue:hover { color: var(--sky-blue); }
+
+/* Smooth scrolling utilities */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* For better performance on mobile devices */
+@media (prefers-reduced-motion: reduce) {
+  html,
+  * {
+    scroll-behavior: auto;
+  }
+}
